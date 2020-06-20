@@ -1,0 +1,11 @@
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: echoflask
+subjects:
+- kind: ServiceAccount
+  name: echoflask
+roleRef:
+  kind: Role
+  name: echoflask
+  apiGroup: rbac.authorization.k8s.io
