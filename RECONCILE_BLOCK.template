@@ -146,8 +146,8 @@ func (r *Reconcile__CRKIND__) newServiceForCR(cr *__GROUPNAME____VERSION__.__CRK
         Spec: corev1.ServiceSpec{
             Ports: []corev1.ServicePort{{
                 Protocol: "TCP",
-                Port: 5000,
-                TargetPort: intstr.FromInt(5000),
+                Port: __CLUSTERPORT__,
+                TargetPort: intstr.FromInt(__CLUSTERPORT__),
             }},
             Type: corev1.ServiceTypeNodePort,
             Selector: labels,
